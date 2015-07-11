@@ -1,0 +1,30 @@
+{
+  "name": "control-sneak-backend",
+  "version": "1.0.0",
+  "description": "package.json for express setup",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peasnrice/control-sneak-backend.git"
+  },
+  "keywords": [
+    "backend",
+    "controlsneak",
+    "control",
+    "sneak",
+    "pamplesneak",
+    "pample"
+  ],
+  "author": "Andy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peasnrice/control-sneak-backend/issues"
+  },
+  "homepage": "https://github.com/peasnrice/control-sneak-backend#readme",
+  "dependencies": {
+    "express": "^4.13.1"
+  }
+}

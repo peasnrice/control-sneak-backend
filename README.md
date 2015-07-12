@@ -16,6 +16,6 @@ Run mongodb with:
 `mongod`
 
 ##Run Server
-Run with:
+Run app using:
 
 `node app.js`

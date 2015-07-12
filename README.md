@@ -4,22 +4,20 @@
 ###Node
 Install node.js, installers can be found here:[Get Node](https://nodejs.org/download/)
 
-###Express
-install express by running 
+run:
 
-`npm install express --save`
+`npm install`
 
-###mongodb
-Install MongoDB
+This will download packages found in packages.json.
 
-`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+##Run MongoDB
+Run mongodb with:
 
-Run MongoDB with 
+##Get Dependencies
 
 `mongod`
 
-###mongoose
-Install Mongoose
+##Run Server
+Run with:
 
-`npm install mongoose`
-
+`node app.js`

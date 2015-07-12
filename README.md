@@ -13,8 +13,6 @@ This will download packages found in packages.json.
 ##Run MongoDB
 Run mongodb with:
 
-##Get Dependencies
-
 `mongod`
 
 ##Run Server

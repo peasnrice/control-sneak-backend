@@ -3,12 +3,31 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var passport = require('passport');
+var facebookStrategy = require('passport-facebook').Strategy;
+var qs = require('querystring');
 
 var app = express();
 
 //define routes - this needs to be broken out into a routes directory
 app.get('/', function(req, res){
     res.send('Hello World!');
+});
+
+
+//define routes - this needs to be broken out into a routes directory
+app.post('/login/facebook', function(req, res){
+    var body = '';
+    req.on('data', function (data) {
+        body += data;
+        // Too much POST data, kill the connection!
+        if (body.length > 1e6)
+            req.connection.destroy();
+    });
+    req.on('end', function () {
+        var post = qs.parse(body);
+        console.log(post);
+        // use post['blah'], etc.
+    });
 });
 
 app.get('/hello', function(req, res){
